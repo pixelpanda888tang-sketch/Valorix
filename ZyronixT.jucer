@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="ZyronixT" name="ZyronixT" projectType="audioplug"
+              version="1.0.0" companyName="BeatsPanda" companyWebsite="https://beatspanda.example"
+              pluginManufacturer="BeatsPanda" pluginName="ZyronixT" pluginDesc="AI-assisted wavetable synth"
+              pluginFormats="buildVST3,buildStandalone" pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"
+              cppLanguageStandard="20" useAppConfig="0" addUsingNamespaceToJuceHeader="0"
+              displaySplashScreen="0" reportAppUsage="0">
+  <MAINGROUP id="root" name="ZyronixT">
+    <GROUP id="src" name="Source">
+      <FILE id="procH" name="PluginProcessor.h" compile="0" resource="0" file="Source/PluginProcessor.h"/>
+      <FILE id="procC" name="PluginProcessor.cpp" compile="1" resource="0" file="Source/PluginProcessor.cpp"/>
+      <FILE id="edH" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="edC" name="PluginEditor.cpp" compile="1" resource="0" file="Source/PluginEditor.cpp"/>
+      <FILE id="wtH" name="WavetableOscillator.h" compile="0" resource="0" file="Source/WavetableOscillator.h"/>
+      <FILE id="aiH" name="AIParamMapper.h" compile="0" resource="0" file="Source/AIParamMapper.h"/>
+      <FILE id="aiC" name="AIParamMapper.cpp" compile="1" resource="0" file="Source/AIParamMapper.cpp"/>
+      <FILE id="prH" name="PresetManager.h" compile="0" resource="0" file="Source/PresetManager.h"/>
+      <FILE id="prC" name="PresetManager.cpp" compile="1" resource="0" file="Source/PresetManager.cpp"/>
+      <FILE id="pcH" name="PluginCharacteristics.h" compile="0" resource="0" file="Source/PluginCharacteristics.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022" extraCompilerFlags="/std:c++20"/>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+</JUCERPROJECT>
